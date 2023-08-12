@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'car-pred-demo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D4FFBAE8E3674B8CB2153F17E8844E9A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E4449ED1AD3743FB9AABD400B0E39FFD }}
