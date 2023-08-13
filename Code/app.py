@@ -2,9 +2,19 @@
 import uvicorn
 from fastapi import FastAPI
 import joblib
-from CarDesc import Car_Desc
+#from CarDesc import Car_Desc
 import os
 import numpy as np
+
+from pydantic import BaseModel
+
+class Car_Desc(BaseModel):
+    Year:int
+    Mileage:int
+    City:str
+    State:str
+    Make:str
+    Model:str
 
 app=FastAPI()
 #Fetching the file name for model to load
