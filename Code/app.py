@@ -22,8 +22,15 @@ curr_dir=os.getcwd()
 parent_path=os.path.dirname(curr_dir)
 folder_name='Model'
 
+print('Current dir : '+curr_dir)
+print('Parent: '+parent_path)
+
+
+
 model_filename=os.path.join(parent_path,folder_name,'linear_reg.joblib')
+print('model dir:'+model_filename)
 model=joblib.load(model_filename)
+
 
 #Index route
 @app.get('/')
